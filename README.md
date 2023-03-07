@@ -10,6 +10,42 @@ Typescript - Node - Express
 
 ## How to use
 
+Root url : [https://products.cyclic.app/](https://products.cyclic.app/)
+
+### Response object
+
+A success variable denoting the success or failure (boolean value, true or false)
+
+Message (string value)
+
+### Endpoints
+
+| Endpoints | Description |
+| - | - |
+| /api/v1/product/{id} | responds with a product to the corresponding id (throws 404 error if the url is invalid or the product is not found)  |
+| /api/v1/product/all  | responds with all the products available in the database (throws 404 error if the url is invalid or there are no products in the database) |
+
+### Valid query parameters
+
+| Query | Description |
+| - | - |
+| type | responds with the corresponding type of products |
+| lte | Products with price lesser and equal to the specified value |
+| gte | Products with price greater and equal to the specified value |
+
+### Examples
+
+```code
+https://products.cyclic.app/api/v1/product/all?type=keyboard
+=> Returns all the keyboard type products
+
+https://products.cyclic.app/api/v1/product/all?gte=1000&lte=25000
+=> Returns all the products with price greater than equal to 1000 and lesser than equal to 25000
+
+https://products.cyclic.app/api/v1/product/some-random-id
+=> Returns the product with the corresponding id
+```
+
 ## Install
 
 Download the zipped directory of this project by clicking on the green button above or clone it to your machine using the following command
