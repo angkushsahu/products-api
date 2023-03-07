@@ -33,7 +33,7 @@ class ApiFeatures {
             this.query = this.query.filter((product) => product.price <= tempQuery.lte);
         }
         if (tempQuery.gte) {
-            this.query = this.query.filter((product) => product.price >= tempQuery.lte);
+            this.query = this.query.filter((product) => product.price >= tempQuery.gte);
         }
 
         return this;
