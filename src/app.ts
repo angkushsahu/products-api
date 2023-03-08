@@ -8,6 +8,9 @@ app.use(express.json({ limit }));
 import cors from "cors";
 app.use(cors({ origin: true, credentials: true }));
 
+import { join } from "path";
+app.use(express.static(join(__dirname, "views")));
+
 import routes from "./routes";
 app.use("/api/v1/product", routes);
 

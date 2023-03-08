@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp -R ./src/views ./build",
     "start": "node build/index.js",
     "dev": "nodemon src/index.ts --watch src"
   },

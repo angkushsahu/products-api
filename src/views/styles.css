@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #0d1117;
+    --faint-color: #bababa;
+    --off-white: #dddbdb;
+    --bg-color: #f5f5f5;
+    --highlight-color: #0f3d8b;
+    --variable-color: #7ee787;
+    --keyword-color: #ff7b72;
+    --key-color: #79c0ff;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-underline-position: under;
+    color: var(--highlight-color);
+}
+
+strong {
+    color: var(--highlight-color);
+    font-weight: 700;
+}
+
+.table_container {
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--primary-color);
+}
+
+.endpoints_table {
+    min-width: 75rem;
+}
+
+.queries_table {
+    min-width: 60rem;
+}
+
+.examples_table {
+    min-width: 68rem;
+}
+
+table > thead {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+table > thead > tr > th,
+table > tbody > tr > td {
+    padding: 1rem;
+}
+
+table > tbody > tr:nth-child(2n) {
+    background-color: var(--off-white);
+}
+
+.root {
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+}
+
+header {
+    padding: 15rem 0;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 0 0 100vmax var(--primary-color);
+    clip-path: inset(0 -100vmax);
+}
+
+header > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--faint-color);
+    max-width: 65ch;
+    line-height: 160%;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.contents > ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.contents > ul > li > a {
+    text-decoration: none;
+}
+
+.tech_stack > .tech_images {
+    display: flex;
+    gap: 2rem;
+}
+
+.how_to_use > .url {
+    font-weight: 600;
+}
+
+.response_object > h3 {
+    margin: 3rem 0 1rem;
+    color: var(--highlight-color);
+}
+
+.response_object > p {
+    margin: 0.5rem 0;
+}
+
+.note {
+    font-size: 1.8rem;
+}
+
+.examples_table > tbody > tr > td > p {
+    margin: 0;
+}
+
+.examples_table > tbody > tr > td > p:nth-child(1) {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: var(--highlight-color);
+}
+
+.examples_table > tbody > tr > td > p:nth-child(2) {
+    font-style: italic;
+}
+
+.typescript > .code_block {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
+    position: relative;
+    isolation: isolate;
+}
+
+.typescript > .code_block > .copy_button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+}
+
+.typescript > .code_block .variable_name {
+    color: var(--variable-color);
+}
+
+.typescript > .code_block .keyword {
+    color: var(--keyword-color);
+}
+
+.typescript > .code_block .key {
+    color: var(--key-color);
+}
+
+@media screen and (max-width: 25em) {
+    .typescript > .code_block > .copy_button {
+        bottom: 1.5rem;
+        top: auto;
+    }
+}
