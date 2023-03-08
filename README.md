@@ -32,6 +32,9 @@ Message (string value)
 | type | responds with the corresponding type of products |
 | lte | Products with price lesser and equal to the specified value |
 | gte | Products with price greater and equal to the specified value |
+| page | Products at specified page number |
+
+**Note - Each page contains 10 products**
 
 ### Examples
 
@@ -41,6 +44,9 @@ https://products.cyclic.app/api/v1/product/all?type=keyboard
 
 https://products.cyclic.app/api/v1/product/all?gte=1000&lte=25000
 => Returns all the products with price greater than equal to 1000 and lesser than equal to 25000
+
+https://products.cyclic.app/api/v1/product/all?page=2
+=> Returns all the products at page number 2
 
 https://products.cyclic.app/api/v1/product/some-random-id
 => Returns the product with the corresponding id
