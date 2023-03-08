@@ -38,19 +38,31 @@ Message (string value)
 
 ### Examples
 
-```code
-https://products.cyclic.app/api/v1/product/all?type=keyboard
-=> Returns all the keyboard type products
+----
 
-https://products.cyclic.app/api/v1/product/all?gte=1000&lte=25000
-=> Returns all the products with price greater than equal to 1000 and lesser than equal to 25000
+**https://products.cyclic.app/api/v1/product/all?type=keyboard**
 
-https://products.cyclic.app/api/v1/product/all?page=2
-=> Returns all the products at page number 2
+*Returns all the keyboard type products*
 
-https://products.cyclic.app/api/v1/product/some-random-id
-=> Returns the product with the corresponding id
-```
+----
+
+**https://products.cyclic.app/api/v1/product/all?gte=1000&lte=25000**
+
+*Returns all the products with price greater than equal to 1000 and lesser than equal to 25000*
+
+----
+
+**https://products.cyclic.app/api/v1/product/all?page=2**
+
+*Returns all the products at page number 2*
+
+----
+
+**https://products.cyclic.app/api/v1/product/some-random-id**
+
+*Returns the product with the corresponding id*
+
+----
 
 ## Install
 
@@ -72,18 +84,7 @@ npm i
 
 Contact Me from [here](https://angkush.vercel.app/contact)
 
-<a href="https://angkush.vercel.app/" rel="noopener noreferrer" target="_blank">
-  <img src="https://img.shields.io/badge/my_portfolio-teal?style=for-the-badge&logo=ko-fi&logoColor=white" alt="portfolio" />
-</a>
-
-<a href="https://linkedin.com/in/angkush-sahu-0409311bb" rel="noopener noreferrer" target="_blank">
-  <img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="portfolio" />
-</a>
-
-<a href="https://angkush.vercel.app/contact" rel="noopener noreferrer" target="_blank">
-  <img src="https://img.shields.io/badge/Mail-red?style=for-the-badge&logo=gmail&logoColor=white" alt="portfolio" />
-</a>
-
-<a href="https://github.com/angkushsahu" rel="noopener noreferrer" target="_blank">
-  <img src="https://img.shields.io/badge/Github-gray?style=for-the-badge&logo=github&logoColor=white" alt="portfolio" />
-</a>
+[![portfolio](https://img.shields.io/badge/my_portfolio-teal?style=for-the-badge&logo=ko-fi&logoColor=white)](https://angkush.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/angkush-sahu-0409311bb)
+[![mail](https://img.shields.io/badge/Mail-red?style=for-the-badge&logo=gmail&logoColor=white)](https://angkush.vercel.app/contact)
+[![github](https://img.shields.io/badge/Github-gray?style=for-the-badge&logo=github&logoColor=white)](https://github.com/angkushsahu)
